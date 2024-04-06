@@ -1,0 +1,49 @@
+.taskBox{
+    background: var(--gray-500);
+    width: 736px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+}
+
+.taskBox p{
+    margin: auto 1rem;
+    color: var(--gray-100);
+}
+
+.taskBox button{
+    line-height: 0;
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.taskBoxCompleted{
+    background: var(--gray-500);
+    width: 736px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+    opacity: 0.5;
+}
+
+.taskBoxCompleted p{
+    margin: auto 1rem;
+    color: var(--gray-100);
+    text-decoration: line-through;
+}
+
+.taskBoxCompleted button{
+    line-height: 0;
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
