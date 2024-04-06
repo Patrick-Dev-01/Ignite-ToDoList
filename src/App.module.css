@@ -16,7 +16,7 @@ form{
 }
 
 form input{
-  min-width: 638px;
+  width: 638px;
   height: 54px;
   background: var(--gray-500);
   text-indent: 10px;
@@ -44,6 +44,10 @@ form button{
 form button:hover{
   transition: 0.1s;
   background: #134e71;
+}
+
+form input, form button{
+  transform: translateY(-50%);
 }
 
 .plusIcon{
@@ -117,6 +121,24 @@ span{
 .noTasksCreated p{
   line-height: 1.5;
   color: var(--gray-300);
+}
+
+@media (max-width: 768px){
+  form{
+    flex-direction: column;
+  }
+
+  form input{
+    width: 300px;
+  }
+
+  form button{
+    margin-top: 1.5rem;
+  }
+
+  .noTasksCreated strong, .noTasksCreated p{
+    font-size: 0.75rem;
+  }
 }
 
 
